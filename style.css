@@ -1,0 +1,447 @@
+body {
+  margin: 0;
+  padding: 0; 
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+.netflix-image{
+   margin-left:70px;
+   margin-top:30px;
+   max-width:150px;
+   height:auto;
+}
+.sign-in-button {
+  position: absolute;
+  top: 20px; 
+  right: 80px; 
+  background-color: #f62121;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.select-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 150px;
+}
+.select-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  display: flex;
+  align-items: center;
+  background-color:transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+select {
+  padding: 10px;
+  background-color:transparent;
+  color: white;
+  width: 150px;
+}
+
+select option {
+  background-color: white;
+  padding-left: 10px;
+}
+.custom-select {
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+  color: white; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius if desired */
+  width: 200px; /* Adjust width as needed */
+  font-family: "Font Awesome 5 Free"; /* Specify Font Awesome font family */
+  font-weight: 900; /* Adjust font weight if needed */
+  font-size: 16px; /* Adjust font size as needed */
+  appearance: none; /* Remove default appearance */
+  background-position: right 10px center; /* Position the arrow icon */
+  background-size: 16px; /* Adjust arrow icon size as needed */
+  padding-right: 30px; /* Adjust padding to make room for the arrow icon */
+}
+
+.custom-select::after {
+  content: "\f107"; /* Unicode for the arrow-down icon (angle-down) */
+  font-family: "Font Awesome 5 Free"; /* Specify Font Awesome font family */
+  font-weight: 900; /* Adjust font weight if needed */
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust position of the arrow icon */
+  transform: translateY(-50%);
+  font-size: 16px; /* Adjust font size as needed */
+  color: white; /* Set the arrow color to white */
+}
+
+
+.area {
+    margin-top:200px;
+}
+
+.area h1 {
+  text-align: center;
+  color:white;
+  font-size: 40px;
+  font-family: sans-serif;
+  word-spacing: 5px;
+  line-height: 75px;
+}
+
+.area h3 {
+  margin-top: -30px;
+  font-size: 23px;
+  font-weight: normal;
+  text-align: center;
+  color:white;
+  font-family: sans-serif;
+}
+.area h4 {
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  color:white;
+  font-family: sans-serif;
+}
+
+
+.search {
+  width: 100%;
+  background-color: none;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.box {
+  width: 25%;
+  min-height: 50px;
+  background:rgba(0, 0, 0, 0.5);
+  color: white;
+ 
+  border: 1px solid  whitesmoke;
+  border-radius: 4px;
+  font-size: 20px;
+
+}
+
+.try { 
+  margin-left:2%;
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.grey{
+  background-color:rgb(61, 59, 59);
+  height:10px;
+}
+.container1 {
+  width: 100%;
+  min-height: 600px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.container1 img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
+
+  max-width: 100%;
+  height: 350px;
+}
+
+.container1 .image {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  object-fit: contain;
+}
+
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: center;
+  align-content: center;
+  font-family: sans-serif;
+}
+.text p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.text h1 {
+  font-size: 3.125rem;
+}
+.question {
+  width: 100%;
+  min-height:900px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.question h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quest {
+  width: 51%;
+  min-height: 75px;
+  background-color: #303030;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.quest .textbox {
+  display: flex;
+  text-align: left;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+  font-size: 25px;
+  margin: 0 30px;
+  word-spacing: 5px;
+  text-align: left;
+}
+
+.quest i {
+  margin: 0 30px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.area1 {
+  margin-top:100px;
+}
+.area1 h3 {
+  margin-top: -30px;
+  font-size: 23px;
+  font-weight: normal;
+  text-align: center;
+  color:white;
+  font-family: sans-serif;
+}
+.search1 {
+  width: 100%;
+  
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.box1{
+  width: 25%;
+  min-height: 50px;
+  background:rgba(0, 0, 0, 0.5);
+  color: white;
+ 
+  border: 1px solid  whitesmoke;
+  border-radius: 4px;
+  font-size: 20px;
+
+}
+
+.try1 { 
+  margin-left:2%;
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.black{
+  background-color:black;
+  height:10px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 375px;
+  background-color: black;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:space-around;
+
+}
+
+.footercon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50px;
+  background-color: transparent;
+}
+
+.footer .flex1 {
+  color:#999;;
+  justify-content:space-around;
+  align-items:flex-start;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  font-size: 17px;
+  min-height: 30px;
+
+}
+
+.footer .flex1 h5 {
+  align-self:flex-start;
+}
+
+.list1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: center;
+  justify-content: center;
+  min-height:50px;
+  font-size: 13px;
+  padding: 0px 70px;
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 13px;
+  margin: 7px -10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.list1 li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li a {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+}
+.last{
+  margin-top:-5%;
+  background-color: black;
+  height:100px;
+}
+.last h4{
+  color:#999;
+  margin-left:250px;
+  font-family: sans-serif;
+}
+.select-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  width: 150px;
+}
+
+.globe-icon {
+  color: white;
+  margin-right: 10px;
+  vertical-align: middle;
+}
